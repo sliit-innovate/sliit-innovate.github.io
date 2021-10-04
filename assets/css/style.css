@@ -524,3 +524,17 @@ section {
 #footer .credits a {
   color: #ff3333;
 }
+
+
+.navimage {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navproperties {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999999;
+}
