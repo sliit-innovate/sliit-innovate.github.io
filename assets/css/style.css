@@ -290,7 +290,7 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
-.about .content h2 {
+.home .content h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -298,23 +298,23 @@ section {
   text-transform: uppercase;
 }
 
-.about .content h3 {
+.home .content h3 {
   font-weight: 500;
   line-height: 32px;
   font-size: 24px;
 }
 
-.about .content ul {
+.home .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.home .content ul li {
   padding: 10px 0 0 28px;
   position: relative;
 }
 
-.about .content ul i {
+.home .content ul i {
   left: 0;
   top: 12px;
   position: absolute;
@@ -322,7 +322,7 @@ section {
   color: #ff0000;
 }
 
-.about .content p:last-child {
+.home .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -523,4 +523,71 @@ section {
 
 #footer .credits a {
   color: #ff3333;
+}
+/*Navigation panel*/
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(3, 3, 3);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+
+/*new Css navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.img-eco {
+  border-radius: 8px; 
+  display: block;
+  margin-left: 30%;
+  
+  padding: 5px;
+  
+  width: 50%;
+}
+div.eco-txt {
+  text-align: center;
+  padding: 10px 20px;
 }
