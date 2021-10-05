@@ -288,9 +288,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Us
+# Home
 --------------------------------------------------------------*/
-.about .content h2 {
+.home .content h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -298,18 +298,18 @@ section {
   text-transform: uppercase;
 }
 
-.about .content h3 {
+.home .content h3 {
   font-weight: 500;
   line-height: 32px;
   font-size: 24px;
 }
 
-.about .content ul {
+.home .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.home .content ul li {
   padding: 10px 0 0 28px;
   position: relative;
 }
@@ -322,9 +322,12 @@ section {
   color: #ff0000;
 }
 
-.about .content p:last-child {
+.home .content p:last-child {
   margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Contact Us
