@@ -197,25 +197,25 @@
         <br><br>
         <div class="service-row">
         
-          <div class="service-column" onclick="openTab('b1');" style="background:rgb(85, 87, 85); ">
+          <div class="service-column" onclick="openTab('b1', this, 'black');" id="defaultOpen" >
             <p>
             Strategic Actions
           </p>
           
           <br>
           </div>
-          <div class="service-column" onclick="openTab('b2');" style="background:rgb(155, 156, 156);">
+          <div class="service-column" onclick="openTab('b2', this, 'black');"  >
             <p>
             Facilities Information
             </p>
           <br>
           </div>
-          <div class="service-column" onclick="openTab('b3');" style="background:rgb(85, 87, 85);">
+          <div class="service-column" onclick="openTab('b3', this, 'black');" >
             Research/Product Development Grants
             <p></p>
            
           </div>
-          <div class="service-column" onclick="openTab('b4');" style="background:rgb(155, 156, 156);">
+          <div class="service-column" onclick="openTab('b4', this, 'black');" >
             <p>
             Research Support
             </p>
@@ -225,8 +225,8 @@
 
         
         <!-- Full-width columns: (hidden by default) -->
-        <div id="b1" class="containerTab" style="display:none;background:rgb(13, 14, 13)">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div id="b1" class="containerTab" >
+        
           <h2>Strategic Actions</h2>
           <p>
             <ul>
@@ -270,8 +270,8 @@
           </p>
         </div>
         
-        <div id="b2" class="containerTab" style="display:none;background:rgb(13, 14, 13)">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div id="b2" class="containerTab" >
+          
           <h2>Facilities - Information</h2>
           
           <div class="row content">
@@ -296,8 +296,8 @@
           
         </div>
         
-        <div id="b3" class="containerTab" style="display:none;background:rgb(13, 14, 13)">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div id="b3" class="containerTab" >
+          
           <h2>Research/ Product Development Grants</h2>
           <p>
             <ul>
@@ -318,8 +318,8 @@
           </p>
         </div>
 
-        <div id="b4" class="containerTab" style="display:none;background:rgb(13, 14, 13)">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div id="b4" class="containerTab" >
+         
           <h2>Research Support</h2>
           <p>
             <ul>
@@ -501,7 +501,10 @@
                 <li>Establish Pitching exercise</li>
                 <li>Attempt to partner with established Incubators in operation</li>
               </ul>
+              <br>
+              <a href="https://www.sliit.lk/conceptnursery/"><button class="button">Read More</button></a>
             </ul>
+            
           </div>
         </div>
 
@@ -760,16 +763,25 @@ themselves in research and development projects undertaken by these resident com
 
 
   <script>
-    function openTab(tabName) {
-      var i, x;
+    function openTab(tabName,elmnt,color) {
+      var i, x,tablinks;
       x = document.getElementsByClassName("containerTab");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
-      document.getElementById(tabName).style.display = "block";
+      tablinks = document.getElementsByClassName("service-column");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
     }
+      document.getElementById(tabName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    document.getElementById("defaultOpen").click();
+  
     </script>
 </body>
 
 </html>
+
+
 

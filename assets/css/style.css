@@ -581,17 +581,15 @@ body {
   text-align: center;
   font-size: 25px;
   cursor: pointer;
+  background:rgb(155, 156, 156)
  
-  
-  
 }
 
 .containerTab {
   padding: 20px;
   color: white;
-  
-  
-
+  display:none;
+  background:rgb(13, 14, 13)
 }
 
 /* Clear floats after the columns */
@@ -602,9 +600,20 @@ body {
 }
 
 /* Closable button inside the container tab */
-.closebtn {
-  float: right;
+
+/*Read more*/
+
+ .button {
+  background-color: #467e9e; 
+  border: none;
   color: white;
-  font-size: 35px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
+  border-radius: 6px;
+  font-family:Lucida Console;
 }
