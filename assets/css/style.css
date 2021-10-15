@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+  
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -562,7 +566,7 @@ section {
   margin-right: -15%;
 }
 
-/*Services */
+/*Services 
 * {
   box-sizing: border-box;
 }
@@ -573,7 +577,7 @@ body {
   
 }
 
-/* The grid: Three equal columns that floats next to each other */
+ The grid: Three equal columns that floats next to each other 
 .service-column {
   float: left;
   width: 25%;
@@ -581,7 +585,9 @@ body {
   text-align: center;
   font-size: 25px;
   cursor: pointer;
-  background:rgb(155, 156, 156)
+  background:rgb(155, 156, 156);
+  scroll-behavior: smooth;
+  
  
 }
 
@@ -589,16 +595,26 @@ body {
   padding: 20px;
   color: white;
   display:none;
-  background:rgb(13, 14, 13)
+  background:rgb(13, 14, 13);
+}
+  .containerTab {
+  animation: fadeEffect 1.5s; 
 }
 
-/* Clear floats after the columns */
+Go from zero to full opacity 
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+ Clear floats after the columns 
 .service-row:after {
   content: "";
   display: table;
   clear: both;
 }
-
+*/
 /* Closable button inside the container tab */
 
 /*Read more
