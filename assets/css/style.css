@@ -566,6 +566,10 @@ section {
   margin-right: -15%;
 }
 
+#list-services li {
+  padding: 10px;
+}
+
 /*Services 
 * {
   box-sizing: border-box;
